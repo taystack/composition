@@ -206,7 +206,7 @@ module.exports = (grunt) ->
           keepBuildDir: true
           almond: true
           insertRequire: ['main']
-          optimize: 'none'
+          optimize: 'uglify'
 
     # Reporter
     # --------
