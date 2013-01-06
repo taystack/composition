@@ -1,0 +1,62 @@
+
+// Libraries
+// *********
+
+// Compass
+// =======
+
+// Configuration
+// -------------
+$legacy-support                        : true;
+$legacy-support-for-ie                 : $legacy-support;
+$legacy-support-for-ie6                : $legacy-support;
+$legacy-support-for-ie7                : $legacy-support;
+$legacy-support-for-ie8                : $legacy-support;
+$support-for-original-webkit-gradients : $legacy-support;
+
+$experimental-support                  : true;
+$experimental-support-for-mozilla      : $experimental-support;
+$experimental-support-for-webkit       : $experimental-support;
+$experimental-support-for-opera        : $experimental-support;
+$experimental-support-for-microsoft    : $experimental-support;
+$experimental-support-for-khtml        : $experimental-support;
+$experimental-support-for-pie          : $experimental-support;
+$experimental-support-for-svg          : $experimental-support;
+
+// Modules
+// -------
+@import "compass";
+
+// Bootstrap
+// =========
+
+// Configuration
+// -------------
+// Add any options to configure bootstrap here.
+
+// Modules
+// -------
+@import "../components/styles/bootstrap-sass/bootstrap";
+@import "../components/styles/bootstrap-sass/responsive";
+
+// Font Awesome
+// TODO: Bug font-awesome on github until they push a new tag with a fixed
+//  scss file as master has it but not the latest tag.
+// ============
+
+// Configuration
+// -------------
+$fontAwesomePath: "/media/fonts/fontawesome-webfont";
+
+// Modules
+// -------
+@import "vendor/font-awesome/font-awesome";
+
+// Views
+// =====
+
+// Modules
+// -------
+@import "views/site";
+@import "views/search";
+@import "views/item";

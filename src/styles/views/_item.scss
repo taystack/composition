@@ -1,0 +1,47 @@
+
+// Container
+// ---------
+#item {
+  margin-top: 1.5em;
+  padding: 1.5em;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(190, 190, 190);
+  float: right;
+  @include border-radius(3px);
+  @include box-sizing(border-box);
+  @include box-shadow(rgb(40, 40, 40) 0 0 2px -1px);
+  @extend .span7;
+  @extend [class*="span"];
+}
+
+// Title
+// -----
+#item .title {
+  font-size: 14pt;
+  padding: 0;
+}
+
+// Name
+// ----
+#item .name {
+  color: rgb(120, 120, 120);
+  font-weight: bold;
+  font-size: 10pt;
+  margin: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+// Value
+// -----
+#item .value {
+  margin: 0.5em;
+  margin-top: 0.1em;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+// Poster
+#item .poster {
+  float: right;
+  margin: 0.5em;
+}
