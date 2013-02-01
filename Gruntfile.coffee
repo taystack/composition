@@ -216,9 +216,11 @@ module.exports = (grunt) ->
     # Webserver
     # ---------
     connect:
-      base: 'temp'
-      hostname: 'localhost'
-      port: 3501
+      server:
+        options:
+          base: 'temp'
+          hostname: 'localhost'
+          port: 3501
 
   # Dependencies
   # ============
